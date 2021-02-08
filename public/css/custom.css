@@ -905,7 +905,7 @@ textarea {
 }
 a {
   text-decoration: none;
-  color: #555;
+  /* color: #555; */
 }
 @font-face {
   font-family: "untitled-font-2";
