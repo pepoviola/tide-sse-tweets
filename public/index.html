@@ -119,7 +119,7 @@ button.game--start {
         </div>
         <div class="body">
           <p>
-            Streaming tweets about <span class="tag">Rust</span> <a href="https://twitter.com/rustlang" target="_blank">(@rustlang)</a> </span> and <span class="tag">http-rs</span> <a href="https://twitter.com/_httprs" target="_blank">(@_httprs)</a>
+            Streaming tweets about <span class="tag">Rust</span> <a href="https://twitter.com/rustlang" target="_blank">(@rustlang)</a> </span>, <span class="tag">http-rs</span> <a href="https://twitter.com/_httprs" target="_blank">(@_httprs)</a> and <span class="tag">Rust Foundation</span> <a href="https://twitter.com/rust_foundation" target="_blank">(@rust_foundation)</a>
           </p>
           <ul class="tweets" id="tweets"></ul>
         </div>
@@ -146,7 +146,7 @@ button.game--start {
 
   function add(data){
     var text = $('<span class="tweet">').text(data.text);
-    var str = text.text().replace(/(rust|httprs|tide|surf|async)/i, '<span class="tag">$1</span>');
+    var str = text.text().replace(/(rust_foundation|rust|httprs|tide|surf|async)/i, '<span class="tag">$1</span>');
     text.html(str);
     var t = $('<li>');
     t.append($('<img>').attr('src', data.user.profile_image_url_https));

@@ -54,7 +54,7 @@ async fn spawn_tracker(broadcaster: BroadcastChannel<Tweet>) {
     task::spawn(async move {
         let mut tracker = twitter_stream::Builder::new(token.as_ref());
         let mut stream = tracker
-            .track("@_httprs,@rustlang,rust,async-std")
+            .track("@_httprs,@rustlang,rust,async-std,rust_foundation")
             .listen()
             .try_flatten_stream();
 
