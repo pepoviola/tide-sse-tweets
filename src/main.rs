@@ -48,7 +48,7 @@ async fn spawn_tracker(broadcaster: BroadcastChannel<Tweet>) {
         std::env::var("TW_CONSUMER_KEY").expect("missing env var TW_CONSUMER_KEY"),
         std::env::var("TW_CONSUMER_SECRET").expect("missing env var TW_CONSUMER_SECRET"),
         std::env::var("TW_TOKEN").expect("missing env var TW_TOKEN"),
-        std::env::var("TW_SECRET").expect("missing env var TW_SECRET")
+        std::env::var("TW_SECRET").expect("missing env var TW_SECRET"),
     );
 
     task::spawn(async move {
