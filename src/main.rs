@@ -31,6 +31,7 @@ enum StreamMessage {
 #[derive(Deserialize, Serialize, Clone, Debug)]
 struct Tweet {
     id: u64,
+    id_str: String,
     text: String,
     user: User,
     timestamp_ms: String,
